@@ -1,0 +1,43 @@
+짝수와 홀수
+문제 설명
+정수 num이 짝수일 경우 "Even"을 반환하고 홀수인 경우 "Odd"를 반환하는 함수, solution을 완성해주세요.
+
+제한 조건
+num은 int 범위의 정수입니다.
+0은 짝수입니다.
+입출력 예
+
+num	return
+
+3	"Odd"
+4	"Even"
+
+------- 나의풀이 --------
+function holJjack(num) {
+    var result = '';
+  
+    if(num%2==0){
+      result = "Even";
+      
+    }else if(num == 0){
+      result = "0";
+    }else{
+      result = "Odd";
+    }
+    return result;
+  }
+  
+  console.log(holJjack(2));
+  console.log(holJjack(3));
+
+
+--------삼항조건연산자(?)를 이용한 풀이----------
+<a>df<a>
+
+function holJjack(num) {
+  return num % 2 ? "Odd" : "Even";
+}
+
+console.log(holJjack(2));
+console.log(holJjack(3));
+
