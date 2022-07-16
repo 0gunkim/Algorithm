@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 입출력 예
+absolutes	signs	result
+[4,7,12]	[true,false,true]	9
+[1,2,3]	[false,false,true]	0 -->
+
+<body>
+    <script>
+        function solution(absolutes, signs) {
+    let answer = 0;
+    for (let i = 0; i < absolutes.length; i++) {
+        if (signs[i] === true) {
+            answer += absolutes[i];
+        } else {
+            answer -= absolutes[i];
+        }
+    }
+    return answer;
+}
+let absolutes = [4,7,12];
+let signs = [true,false,true];
+console.log(solution(absolutes, signs));
+
+//   9
+    </script>
+</body>
+</html>
